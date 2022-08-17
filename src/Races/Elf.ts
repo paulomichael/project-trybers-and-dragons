@@ -1,11 +1,11 @@
 import Race from './Race';
 
 class Elf extends Race {
-  _maxLifePoints = 99;
-  static _members = 0;
+  private _maxLifePoints = 99;
+  private static _members = 0;
 
-  constructor(_name: string, _dexterity: number) {
-    super(_name, _dexterity);
+  constructor(name: string, dexterity: number) {
+    super(name, dexterity);
     Elf._members += 1;
   }
 

@@ -15,6 +15,10 @@ abstract class Race {
     return this._dexterity;
   }
 
+  set dexterity(dexterity: number) {
+    this._dexterity = dexterity;
+  }
+
   static createdRacesInstances():number {
     throw new Error('Not implemented');
   }
